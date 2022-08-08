@@ -1,0 +1,29 @@
+#success {
+    .container {
+        .success-right {
+            padding-right: 5rem;
+            h5 {
+                color: $rankOn-primary-color;
+
+            }
+            h3 {
+                span {
+                    a {
+                        color: $rankOn-primary-color;
+                    }
+                }
+
+            }
+            p {
+
+            }
+        
+        }
+        .success-item {
+            // padding-right: 4rem;
+        }
+        button {
+            @include rankon-btn;
+        }
+    }
+}

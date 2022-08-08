@@ -1,0 +1,31 @@
+#about {
+    .container {
+        .about-item {
+            padding: 0 5rem;
+            h5 {
+                color: $rankOn-primary-color;
+
+            }
+            h3 {
+                span {
+                    color: $rankOn-primary-color;
+                }
+
+            }
+            p {
+
+            }
+            ul {
+                li {
+                    i {
+                        color: $rankOn-primary-color;
+                    }
+                }
+            }
+            button {
+                @include rankon-btn;
+            }
+        }
+
+    }
+}

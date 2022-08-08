@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to right, #fbf2fc, #daf4f5 10%, #f8f2fb 68%, #daf6f5 100%);
+
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #143f6b;
+}
+p {
+    color: #777777;
+}
+.rankon-outline-primary {
+    border: 1px solid $rankOn-secondary-color;
+    @include tranisition;
+}
+.rankon-outline-primary:hover {
+    border-color: $rankOn-primary-color;
+    background-color: $rankOn-primary-color;
+    color: white;
+}
+.rank-border-color {
+    border-color: $rankOn-primary-color;
+}
+.rank-text-color {
+    color: $rankOn-primary-color;
+}
+.rank-text-hover {
+    color: $rankOn-secondary-color;
+    @include tranisition;
+}
+.rank-text-hover:hover {
+    color: $rankOn-primary-color;
+}
+

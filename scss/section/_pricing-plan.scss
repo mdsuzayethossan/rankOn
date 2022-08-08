@@ -1,0 +1,41 @@
+#pricing-plan {
+    .container {
+        .pricing-plan-header {
+            h5 {
+                color: $rankOn-primary-color;
+             
+
+            }
+            h3 {
+             
+
+            }
+
+        }
+        .pricing-plan-main {
+            .pricing-plan-item {
+                .card {
+                    padding: 1rem;
+                    background-color: #e9f8f9;
+                    .card-body {
+                        .icon-bg {
+                            width: 80px;
+                            height: 80px;
+                            line-height: 80px;
+                            @include border-radius-50;
+                        }
+                        
+                    }
+                }
+            }
+            .regular-plan {
+                margin-top: -2rem;
+                .card {
+                    // border: 2px solid $rankOn-primary-color!important;
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+                    z-index: 9;
+                }
+            }
+        }
+    }
+}

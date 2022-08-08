@@ -1,0 +1,53 @@
+
+nav {
+    .container {
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        position: relative;
+                        font-weight: 700;
+                        @include tranisition; 
+                        &:hover {
+                            color: $rankOn-primary-color;
+                            &::before {
+                                position: absolute;
+                                width: 25px;
+                                height: 25px;
+                                background-color: rgba(255, 89, 89, 15%);
+                                content: '';
+                                left: 0;
+                              @include border-radius-50;
+                               }
+                        }
+                    
+                        }
+                    .active {
+                        color: $rankOn-primary-color;
+                        &::before {
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+                            background-color: rgba(255, 89, 89, 15%);
+                            content: '';
+                            left: 0;
+                          @include border-radius-50;
+                           }
+
+                    }
+
+                }
+
+            }
+            .nav-right-btn {
+                margin-left: 2rem;
+                button {
+                    @include rankon-btn;
+                }
+            }
+
+        }
+
+    }
+}
+

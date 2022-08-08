@@ -1,0 +1,40 @@
+#website {
+    .container {
+        .website-left {
+            padding-right: 5rem;
+            h5 {
+                color: $rankOn-primary-color;
+
+            }
+            h3 {
+                span {
+                    a {
+                        color: $rankOn-primary-color;
+                    }
+                }
+
+            }
+            p {
+
+            }
+            form {
+               .form {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    width: 2px;
+                    height: 100%;
+                    left: 50%;
+                    @include transform-x-50;
+                    background-color: gray;
+                }
+               }
+               button {
+                @include rankon-btn;
+               }
+            }
+        }
+    }
+}

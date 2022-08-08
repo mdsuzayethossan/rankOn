@@ -1,0 +1,51 @@
+#banner {
+    .container {
+        .banner-content {
+            padding-right: 18rem;
+            @include for-phone-only {
+                padding: 0;
+                text-align: center;
+                margin-top: 40px;
+            }
+            h4 {
+
+            }
+            h1 {
+                span {
+                    color: $rankOn-primary-color;
+                }
+            }
+            p {
+
+            }
+            button {
+                @include rankon-btn;
+            }
+            .play-btn {
+                width: 54px;
+                height: 54px;
+                line-height: 54px;
+
+            }
+        }
+        .banner-right {
+            @include for-phone-only {
+                margin-top: 50px;
+            }
+            .social {
+                background: linear-gradient(to right, #c66f5e, #bb2f62);
+                width: 90px;
+                height: 90px;
+                left: 11%;
+                top: 9%;
+                a {
+                    i {
+                        
+                    }
+                }
+                
+            }
+        }
+
+    }
+}
