@@ -1,4 +1,5 @@
 #rank-breadcrumb {
+    padding-top: 7rem;
     .breadcrumb-item+.breadcrumb-item::before {
         content: var(--bs-breadcrumb-divider, "~")!important;
     }

@@ -1,7 +1,9 @@
 #website {
     .container {
         .website-left {
-            padding-right: 5rem;
+            @include for-desktop-up {
+                padding-right: 5rem;
+            }
             h5 {
                 color: $rankOn-primary-color;
 
@@ -19,16 +21,21 @@
             }
             form {
                .form {
-                position: relative;
-                &::before {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    width: 2px;
-                    height: 100%;
-                    left: 50%;
-                    @include transform-x-50;
-                    background-color: gray;
+                @include for-desktop-up {
+                    background-color: white;
+                }
+                @include for-desktop-up {
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        width: 2px;
+                        height: 100%;
+                        left: 50%;
+                        @include transform-x-50;
+                        background-color: gray;
+                    }
                 }
                }
                button {

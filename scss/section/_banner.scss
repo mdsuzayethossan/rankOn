@@ -1,7 +1,11 @@
 #banner {
+    padding-top: 7rem;
     .container {
         .banner-content {
             padding-right: 18rem;
+            @include for-tablet-landscape-up {
+                padding-right: 0;
+            }
             @include for-phone-only {
                 padding: 0;
                 text-align: center;

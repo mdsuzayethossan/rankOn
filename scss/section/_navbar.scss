@@ -1,5 +1,9 @@
 
-nav {
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    @include tranisition;
     .container {
         .navbar-collapse {
             .navbar-nav {
@@ -51,3 +55,12 @@ nav {
     }
 }
 
+.bg-nav {
+    background-color: white;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    @include tranisition;
+
+}
+.navbar-toggler:focus {
+	box-shadow: none;
+}

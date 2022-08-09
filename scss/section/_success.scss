@@ -1,7 +1,9 @@
 #success {
     .container {
         .success-right {
-            padding-right: 5rem;
+            @include for-desktop-up {
+                padding-right: 5rem;
+            }
             h5 {
                 color: $rankOn-primary-color;
 
