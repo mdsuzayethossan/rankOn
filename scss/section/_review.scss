@@ -16,35 +16,29 @@
         }
         .review-body {
             margin-top: 5rem;
-            .review-icon {
+            .review-icon-inner {
                 position: absolute;
-                left: 50%;
-                @include transform-x-50;
-                width: 40px;
-                height: 40px;
-                line-height: 40px;
-                border: 1px solid $rankOn-secondary-color;
-                text-align: center;
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                -ms-border-radius: 50%;
-                -o-border-radius: 50%;
-                @include tranisition;
-                &:hover {
-                    background-color: $rankOn-primary-color;
-                    border-color: $rankOn-primary-color;
-                    color: white;
-                }
+                left: -8%;
+                top: 10%;
+                .review-icon {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: 1px solid $rankOn-secondary-color;
+                    text-align: center;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    @include tranisition;
+
+                    &:hover {
+                        background-color: $rankOn-primary-color;
+                        border-color: $rankOn-primary-color;
+                        color: white;
+                    }
             }
-            .review-up-icon {
-                position: absolute;
-                top: -12%;
-                z-index: 99;
-            }
-            .review-down-icon {
-                bottom: 0;
-                z-index: 99;
             }
             .review-slider-main {
                 position: relative;

@@ -32,12 +32,15 @@
             @include for-phone-only {
                 margin-top: 50px;
             }
+            @include keyframes;
             .social {
-                background: linear-gradient(to right, #c66f5e, #bb2f62);
+                animation: slidein 5s infinite;
                 width: 90px;
                 height: 90px;
                 left: 11%;
                 top: 9%;
+                -webkit-animation: slidein 5s infinite;
+                }
                 a {
                     i {
                         
@@ -48,4 +51,3 @@
         }
 
     }
-}

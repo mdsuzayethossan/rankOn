@@ -23,5 +23,8 @@
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        dots: true,
+        centerMode: true,
+        centerPadding: 0,
       });
 })()

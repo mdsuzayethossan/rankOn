@@ -1,0 +1,8 @@
+#subscribe {
+    padding-top: 5rem;
+    .subscribe-right {
+        button {
+            @include rankon-btn;
+        }
+    }
+}
