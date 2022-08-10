@@ -1,0 +1,11 @@
+#comingsoon {
+    .container {
+        form {
+            .form {
+                button {
+                    @include rankon-btn;
+                }
+            }
+        }
+    }
+}
