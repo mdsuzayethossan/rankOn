@@ -20,6 +20,9 @@
                 left: -8%;
                 top: 10%;
                 .review-icon {
+                    @include for-phone-only {
+                        display: none!important;
+                    }
                     width: 45px;
                     height: 45px;
                     line-height: 45px;

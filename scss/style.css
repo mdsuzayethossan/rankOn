@@ -486,6 +486,11 @@ p {
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
+@media (max-width: 599px) {
+  #review .container .review-body .review-icon-inner .review-icon {
+    display: none !important;
+  }
+}
 #review .container .review-body .review-icon-inner .review-icon:hover {
   background-color: #ff595a;
   border-color: #ff595a;
