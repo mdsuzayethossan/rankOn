@@ -25,6 +25,9 @@
                         height: 80px;
                         line-height: 80px;
                         @include border-radius-50;
+                        @include for-phone-only {
+                            margin: 0 auto;
+                        }
                     }
 
                 }

@@ -34,7 +34,8 @@
                         height: 100%;
                         left: 50%;
                         @include transform-x-50;
-                        background-color: gray;
+                        background-color: rgba(20, 64, 107, 80%);
+                        opacity: 20%;
                     }
                 }
                }

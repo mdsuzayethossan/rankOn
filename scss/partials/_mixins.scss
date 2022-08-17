@@ -38,6 +38,7 @@
     background-color: $rankOn-primary-color;
     color: white;
     padding: .6rem 2rem; 
+    filter: drop-shadow(0px 10px 15px rgba(255,89,90,0.5));
 }
 @mixin keyframes {
     @keyframes slidein {
@@ -55,3 +56,21 @@
         }
       }
   }
+@mixin  moving {
+    
+  @keyframes moving {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+     
+        transform: rotate(180deg);
+    }
+
+    100% { 
+        transform: rotate(360deg);
+        }
+    }
+    
+}

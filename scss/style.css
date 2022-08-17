@@ -80,6 +80,10 @@ p {
   box-shadow: none;
 }
 
+.icon-color {
+  color: #777777;
+}
+
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
@@ -155,31 +159,16 @@ p {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.navbar .container .navbar-collapse .navbar-nav .nav-item .active {
-  color: #ff595a;
-}
-.navbar .container .navbar-collapse .navbar-nav .nav-item .active::before {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: rgba(255, 89, 89, 0.15);
-  content: "";
-  left: 0;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
 @media (min-width: 1200px) {
   .navbar .container .navbar-collapse .nav-right-btn {
     margin-left: 2rem;
   }
 }
-.navbar .container .navbar-collapse .nav-right-btn button {
+.navbar .container .navbar-collapse .nav-right-btn a {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
 }
 
 .bg-nav {
@@ -194,6 +183,15 @@ p {
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.shape img {
+  width: 27%;
+}
+@media (max-width: 599px) {
+  .shape img {
+    width: 50%;
+  }
 }
 
 #banner {
@@ -221,6 +219,7 @@ p {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
 }
 #banner .container .banner-content .play-btn {
   width: 54px;
@@ -271,6 +270,13 @@ p {
 #client-brand .container {
   background-color: white;
 }
+#client-brand .slick-slide img {
+  display: inline;
+}
+#client-brand .slick-dots {
+  display: none !important;
+}
+
 #about .container {
   padding-top: 13rem;
 }
@@ -287,6 +293,41 @@ p {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
+}
+
+@-webkit-keyframes moving {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 599px) {
+  .hexagon {
+    display: none;
+  }
+}
+.hexagon img {
+  animation: moving 5s linear infinite;
+  -webkit-animation: moving 5s linear infinite;
+  max-width: 100%;
 }
 
 #services .container .services-header h6 {
@@ -318,6 +359,11 @@ p {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+@media (max-width: 599px) {
+  #services .container .services-item .card .card-body .icon-bg {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -352,13 +398,15 @@ p {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    background-color: gray;
+    background-color: rgba(20, 64, 107, 0.8);
+    opacity: 20%;
   }
 }
 #website .container .website-left form button {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
 }
 
 #pricing-plan .container .pricing-plan-header h5 {
@@ -379,11 +427,17 @@ p {
   -o-border-radius: 50%;
 }
 #pricing-plan .container .pricing-plan-main .regular-plan {
-  margin-top: -2rem;
+  margin-top: -2.3rem;
 }
 #pricing-plan .container .pricing-plan-main .regular-plan .card {
+  border: 3px solid #ff595a !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   z-index: 9;
+}
+#pricing-plan .container .pricing-plan-main .regular-plan .card .card-body button {
+  background-color: #ff595a;
+  border-color: #ff595a;
+  color: white;
 }
 
 @media (min-width: 1200px) {
@@ -401,6 +455,7 @@ p {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
 }
 
 #review .container .review-header h5 {
@@ -409,18 +464,15 @@ p {
 #review .container .review-header h3 span {
   color: #ff595a;
 }
-#review .container .review-body {
-  margin-top: 5rem;
-}
 #review .container .review-body .review-icon-inner {
   position: absolute;
   left: -8%;
   top: 10%;
 }
 #review .container .review-body .review-icon-inner .review-icon {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   border: 1px solid #143f6b;
   text-align: center;
   border-radius: 50%;
@@ -447,8 +499,8 @@ p {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(251, 242, 252, 0) 50%, rgba(218, 244, 245, 0.883) 25%);
-  z-index: 9999;
+  background: linear-gradient(to bottom, rgba(251, 242, 252, 0), rgba(220, 244, 0, 0), #f8f2fb 75%, #daf6f5 100%);
+  z-index: 99;
 }
 
 #news .slick-slide img {
@@ -475,6 +527,21 @@ p {
 #news .news-slider-main img {
   filter: grayscale(100%);
 }
+#news .slick-slide {
+  border: 3px solid transparent;
+  padding: 1rem 0.1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#news .slick-center {
+  border: 3px solid #ff595a;
+}
+#news .slick-center h4 {
+  color: #ff595a;
+}
 #news .slick-center img {
   filter: none;
   transform: scale(1.02);
@@ -487,10 +554,19 @@ p {
 #subscribe {
   padding-top: 5rem;
 }
-#subscribe .subscribe-right button {
+#subscribe .container {
+  padding-top: 8rem;
+}
+@media (max-width: 599px) {
+  #subscribe .container {
+    padding-top: 0;
+  }
+}
+#subscribe .container .subscribe-right button {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
 }
 
 #footer {
@@ -555,7 +631,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(198, 111, 94, 0.7), rgba(187, 47, 98, 0.7));
+  background: linear-gradient(to bottom, rgba(198, 111, 94, 0.8), rgba(187, 47, 98, 0.8));
   z-index: 9;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -584,4 +660,5 @@ p {
   background-color: #ff595a;
   color: white;
   padding: 0.6rem 2rem;
+  filter: drop-shadow(0px 10px 15px rgba(255, 89, 90, 0.5));
 }/*# sourceMappingURL=style.css.map */

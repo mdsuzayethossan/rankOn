@@ -15,15 +15,14 @@
 
         }
         .review-body {
-            margin-top: 5rem;
             .review-icon-inner {
                 position: absolute;
                 left: -8%;
                 top: 10%;
                 .review-icon {
-                    width: 40px;
-                    height: 40px;
-                    line-height: 40px;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
                     border: 1px solid $rankOn-secondary-color;
                     text-align: center;
                     border-radius: 50%;
@@ -32,7 +31,6 @@
                     -ms-border-radius: 50%;
                     -o-border-radius: 50%;
                     @include tranisition;
-
                     &:hover {
                         background-color: $rankOn-primary-color;
                         border-color: $rankOn-primary-color;
@@ -47,8 +45,8 @@
                     content: '';
                     width: 100%;
                     height: 100%;
-                    background: linear-gradient(to bottom, rgba(251, 242, 252, 0%) 50%, rgba(218, 244, 245, 0.883) 25% );
-                    z-index: 9999;
+                    background: linear-gradient(to bottom, rgba(251, 242, 252, 0), rgba(220, 244, 0, 0), #f8f2fb 75%, #daf6f5 100%);
+                    z-index: 99;
                 }
             }
         }

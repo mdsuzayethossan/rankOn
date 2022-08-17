@@ -30,3 +30,15 @@
 
     }
 }
+
+.hexagon {
+    @include moving;
+    @include for-phone-only {
+        display: none;
+    }
+    img {
+        animation: moving 5s linear infinite;
+        -webkit-animation: moving 5s linear infinite;
+        max-width: 100%;
+    }
+}

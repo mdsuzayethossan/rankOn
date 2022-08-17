@@ -27,7 +27,21 @@
        
          }
     }
+    .slick-slide {
+        border: 3px solid transparent;
+        padding: 1rem .1rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+    }
     .slick-center {
+        h4 {
+            color: $rankOn-primary-color;
+        }
+        border: 3px solid $rankOn-primary-color;
         img {
             filter: none;
             transform: scale(1.02);

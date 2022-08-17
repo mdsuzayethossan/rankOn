@@ -1,8 +1,14 @@
 #subscribe {
     padding-top: 5rem;
-    .subscribe-right {
-        button {
-            @include rankon-btn;
+    .container {
+        padding-top: 8rem;
+        @include for-phone-only {
+            padding-top: 0;
+        }
+        .subscribe-right {
+            button {
+                @include rankon-btn;
+            }
         }
     }
 }
